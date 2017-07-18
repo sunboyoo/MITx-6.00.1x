@@ -1,0 +1,10 @@
+
+while True:
+    try:
+        n = int(input("Please enter an integer:"))
+        break
+    except ValueError:
+        print("Your input is not an Integer. Please try again.")
+        
+        
+    
