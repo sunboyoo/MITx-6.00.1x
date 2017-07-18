@@ -1,10 +1,22 @@
+# Control Input - Integer
 
 while True:
     try:
-        n = int(input("Please enter an integer:"))
+        n = int(input("Iput an integer:"))
         break
     except ValueError:
-        print("Your input is not an Integer. Please try again.")
+        print("Input is not integer. Please try again.")
         
         
-    
+        
+# Control Input - File Opening       
+while True:
+    try:
+        file_name = input("Provide a name of a file of data: ")
+        fh = open(file_name, "r")
+        break
+    except IOError:
+        print("cannot open", file_name)
+        fh.close() # close file even it fails
+          
+fh.close()    
