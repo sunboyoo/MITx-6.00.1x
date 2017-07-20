@@ -1,0 +1,10 @@
+class Coordinat(object):
+class - class definition
+Coordinate - class name
+object - class parent
+
+
+Method
+getter and setter method - do not access directly
+def get_age(self)
+def set_age(self)
